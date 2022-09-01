@@ -74,14 +74,12 @@ Comme le moteur brushless une électronique de puissance sophistiquée est
 nécessaire pour un pilotage performant. Une connexion à un courant
 alternatif permettra cependant de la faire tourner sans pilotage.
 
-\hypertarget{le-moteur-pas-uxe0-pas}{%
-\subsubsection{Le moteur pas à pas}\label{le-moteur-pas-uxe0-pas}}
+\subsubsection{Le moteur pas à pas}
 
-\begin{longtable}[]{@{}lll@{}}
-\toprule
-\endhead
-\includegraphics[width=2.0855in,height=2.0855in]{media/image72.png} &
-\includegraphics[width=1.875in,height=1.90625in]{media/image73.png} & Ce
+\begin{tabular}{ccm{.33\linewidth}}
+
+\includegraphics[width=2.0855in]{media/image72.png} &
+\includegraphics[width=1.875in]{media/image73.png} & Ce
 moteur est proche dans son architecture du moteur brushless. Il y a en
 plus de poles. Les performances (puissance massique, puissance totale,
 efficacité énergétique) sont plus faibles mais le couple est important
@@ -89,11 +87,10 @@ ce qui permet de ne pas utiliser de réducteur pour de nombreuses
 applications. Aussi chaque pas représente un petit incrément angulaire
 ce qui est intéressant pour des activités de précision (pilotage d'un
 téléscope de hobbysite, imprimante 3D). \\
-\bottomrule
-\end{longtable}
+\end{tabular}
 
-\hypertarget{actionneurs-linuxe9aires}{%
-\subsubsection{Actionneurs linéaires}\label{actionneurs-linuxe9aires}}
+
+\subsubsection{Actionneurs linéaires}
 
 Il est possible de faire translater un aimant en le soumettant à un
 champ magnétique afin de créer un actionneur linéaire. Ces actionneurs
@@ -104,15 +101,9 @@ pour moteurs sans distribution, prototype de suspensions intelligentes.
 La plupart des vérins électrique utilisent en revanche un moteur
 électrique tournant associé à un ensemble vis-écrou
 
-\hypertarget{convertisseurs-duxe9nergie-pneumatique-ou-hydraulique}{%
-\subsection{Convertisseurs d'énergie pneumatique ou
-hydraulique}\label{convertisseurs-duxe9nergie-pneumatique-ou-hydraulique}}
+\subsection{Convertisseurs d'énergie pneumatique ou hydraulique}
 
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.50}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.50}}@{}}
-\toprule
-\endhead
+
 Un vérin est un actionneur utilisant de l'énergie pneumatique ou
 hydraulique pour produire une énergie mécanique lors d'un déplacement
 linéaire ou rotatif limité à sa course. Le vérin permet de convertir de
@@ -128,27 +119,27 @@ grande partie de l'énergie est perdue sous forme d'énergie calorifique
 et lors de la mise à l'échappement de l'air comprimé. En prenant en
 compte le rendement du compresseur (\(\eta = 0,4\)), on obtient un
 rendement global très faible pour la chaîne d'action pneumatique
-(\(\eta = 0,2\)). &
+(\(\eta = 0,2\)). 
+
+\begin{tabular}{cc}
 \includegraphics[width=1.60465in,height=1.07872in]{media/image75.png}
 
 \includegraphics[width=2.54651in,height=1.82389in]{media/image76.png} \\
-\bottomrule
-\end{longtable}
 
-\begin{longtable}[]{@{}lll@{}}
-\toprule
+\end{tabular}
+
+\begin{center}
+\begin{tabular}{ccc}
 \includegraphics[width=2.18753in,height=0.78785in]{media/image77.png} &
 \includegraphics[width=1.94972in,height=0.85305in]{media/image78.png} &
 \includegraphics[width=1.95945in,height=0.94776in]{media/image79.png} \\
-\midrule
-\endhead
 \includegraphics[width=0.7365in,height=0.38835in]{media/image80.png} &
 \includegraphics[width=0.68657in,height=0.4208in]{media/image81.png} &
 \includegraphics[width=0.83815in,height=0.50289in]{media/image82.png} \\
 \emph{\textbf{Vérin linéaire simple effet}} & \emph{\textbf{Vérin
 linéaire double effet}} & \emph{\textbf{Vérin rotatif double effet}} \\
-\bottomrule
-\end{longtable}
+\end{tabular}
+\end{center}
 
 \textbf{La force} délivrée par un vérin est donnée par \(F = PS\) avec
 \(F\) la force en newtons, \(S\) la section du vérin en m² et \(P\) la
@@ -161,29 +152,26 @@ déplacement du vérin en m.s\textsuperscript{-1}.
 \textbf{La cylindrée} est donnée par \(C = S\ c\) avec \(S\) en m² et
 \emph{c}, la course en m.
 
-\begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.50}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 2\tabcolsep) * \real{0.50}}@{}}
-\toprule
-\endhead
-\includegraphics[width=1.42708in,height=0.71875in]{media/image83.png} &
-On note D le diamètre du vérin et d le diamètre de la tige.
+
+\begin{center}
+\includegraphics[width=1.42708in,height=0.71875in]{media/image83.png}
+\end{center}
+
+On note $D$ le diamètre du vérin et $d$ le diamètre de la tige.
 
 Dans la chambre de gauche l'effort est donné par
 \(F_{g} = p_{g}\frac{\pi D^{2}}{4}\).
 
 Dans la chambre de droite l'effort est donné par
 \(F_{d} = p_{g}\frac{\pi\left( D^{2} - d^{2} \right)}{4}\). \\
-\bottomrule
-\end{longtable}
 
-\hypertarget{moteurs-thermiques}{%
-\subsection{Moteurs thermiques}\label{moteurs-thermiques}}
 
-\begin{longtable}[]{@{}ll@{}}
-\toprule
-\endhead
-\includegraphics[width=2.79532in,height=3.1643in]{media/image84.jpeg} &
+\subsection{Moteurs thermiques}
+
+\begin{center}
+\includegraphics[width=2.79532in,height=3.1643in]{media/image84.jpeg} 
+\end{center}
+
 Les moteurs thermiques permettent de récupérer une énergie mécanique, en
 général en rotation, à partir d'une source d'énergie chimique. La
 combustion peut être externe comme dans une machine à vapeur. Dans un
@@ -194,6 +182,4 @@ mécanique emmagasiné sous forme de pression lors de la combustion. Les
 combustions internes sont généralement préférées car elles diminuent les
 pertes par échange thermique. Pour aller plus loin~: moteur 4 temps/
 moteur 2 temps, cycle Diesel, cycle Beau de Rochas/Otto, moteur rotatif,
-distribution. \\
-\bottomrule
-\end{longtable}
+distribution.
